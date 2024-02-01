@@ -1,10 +1,11 @@
 import styles from "./Info.module.css";
+import Statistics from "./statistics/Statistics";
 
 function Info() {
   return (
     <div>
       {/* Interactions */}
-      <Statistics></Statistics>
+      <Statistics />
       {/* Description */}
     </div>
   );
