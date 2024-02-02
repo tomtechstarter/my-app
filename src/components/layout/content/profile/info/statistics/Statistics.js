@@ -1,18 +1,17 @@
 import StandardLabel from "../../../../../common/labels/standard-label/StandardLabel";
-import AppData from "../../../../../../utils/AppData";
 
-function Statistics() {
+function Statistics({ followerCount, followingCount, postCount }) {
   return (
     <div>
       <StandardLabel
-        text={`${AppData.postCount} Beiträge`}
+        text={`${postCount} Beiträge`}
         style={{ marginRight: "100px" }}
       ></StandardLabel>
       <StandardLabel
-        text={`${AppData.followerCount} Follower`}
+        text={`${followerCount} Follower`}
         style={{ marginRight: "100px" }}
       ></StandardLabel>
-      <StandardLabel text={`${AppData.followingCount} gefolgt`} />
+      <StandardLabel text={`${followingCount} gefolgt`} />
     </div>
   );
 }

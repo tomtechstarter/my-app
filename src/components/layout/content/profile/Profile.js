@@ -1,11 +1,11 @@
 import styles from "./Profile.module.css";
 import Info from "./info";
 
-function Profile() {
+function Profile({ userProfile }) {
   return (
     <div className={styles.mainContainer}>
       {/* <Picture></Picture> */}
-      <Info></Info>
+      <Info profile={userProfile}></Info>
     </div>
   );
 }

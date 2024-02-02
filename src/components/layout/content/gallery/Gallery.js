@@ -1,11 +1,12 @@
-import AppData from "../../../../utils/AppData";
 import styles from "./Gallery.module.css";
 
-function Gallery() {
+function Gallery({ posts }) {
+  if (!posts)
+    return <div style={{ width: 100, height: 100, backgroundColor: "blue" }} />;
   return (
     <div className={styles.mainContainer}>
-      {AppData.images.map(function (image, index) {
-        return <img src={image} alt={"My Galery Img" + index} />;
+      {posts.map(function (post, index) {
+        return <img src={post.image} alt={"My Galery Img" + index} />;
       })}
     </div>
   );
