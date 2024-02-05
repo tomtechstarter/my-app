@@ -1,5 +1,8 @@
 .mainContainer {
   background-color: green;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .galleryimg {

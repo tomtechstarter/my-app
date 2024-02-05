@@ -14,14 +14,22 @@ function FollowBtn() {
 
   if (isFollowing) {
     return (
-      <button style={{ backgroundColor: "grey" }} onClick={onClickUnfollow}>
+      <button
+        className={styles.mainContainer}
+        style={{ backgroundColor: "grey" }}
+        onClick={onClickUnfollow}
+      >
         Following
       </button>
     );
   }
 
   return (
-    <button style={{ backgroundColor: "green" }} onClick={onClickFollow}>
+    <button
+      className={styles.mainContainer}
+      style={{ backgroundColor: "green" }}
+      onClick={onClickFollow}
+    >
       Follow
     </button>
   );
