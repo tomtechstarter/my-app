@@ -1,4 +1,5 @@
 import styles from "./Info.module.css";
+import Description from "./description/";
 import Statistics from "./statistics/Statistics";
 
 function Info({ profile }) {
@@ -10,7 +11,7 @@ function Info({ profile }) {
         followingCount={profile.followingCount}
         postCount={profile.postCount}
       />
-      {/* Description */}
+      <Description />
     </div>
   );
 }

@@ -6,6 +6,7 @@ const DatabaseResponse = {
     followerCount: faker.number.int(10000),
     followingCount: faker.number.int(100),
     postCount: faker.number.int(20),
+    // Aufgabe 1: Datenbank ergänzen (name, age, avatar)
   },
   posts: [
     { image: faker.image.url(), text: faker.lorem.lines(2) },
